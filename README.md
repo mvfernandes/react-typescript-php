@@ -1,4 +1,4 @@
-# ReactPhp para fins didáticos
+# React Typescript e Material UI com php para fins didáticos
 
 Projeto criado com React e typescript, backEnd em php;
 
