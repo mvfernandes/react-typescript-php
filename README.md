@@ -6,13 +6,9 @@ Dentro da pasta backEnd existe uma pasta sql, crie sua base com nome 'phpreact' 
 
 Inicie o server localhost:9001, email: adm@adm.com e  senha: 123456
 
-Se for rodar o back e o front em development, acesse o arquivo .\backEnd\Controller\Controller.php e descomente o bloco:
-
- if ($_SERVER['SERVER_NAME'] === 'localhost') {
-    $_SESSION['user'] = [
-        "id" => 1,
-        "nivel" => 1,
-    ];
-}
+Se for rodar o back e o front em development, acesse o arquivo `.\backEnd\index.php` altere
+`define('IS_DEVELOPMENT', false);`
+para
+`define('IS_DEVELOPMENT', true);`
 
 <img src="print.png" alt="Exemplo" width="auto"/>
