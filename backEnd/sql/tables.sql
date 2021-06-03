@@ -48,4 +48,4 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 );
-INSERT INTO `phpreact`.`users` (`nome`, `email`, `password`, `nivel`, `empresa`) VALUES ('Vinicius', 'marcosviniciusdev@hotmail.com', MD5('123456'), '1', 'Empresa Teste');
+INSERT INTO `phpreact`.`users` (`nome`, `email`, `password`, `nivel`, `empresa`) VALUES ('Vinicius', 'adm@adm.com', MD5('123456'), '1', 'Empresa Teste');
