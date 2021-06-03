@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require __DIR__ . "/../Conn.php";
 
@@ -15,12 +14,12 @@ class Controller extends Conn
         parent::__construct();
         $this->postJson = json_decode(file_get_contents('php://input'), true);
 
-        // if ($_SERVER['SERVER_NAME'] === 'localhost') {
-        //     $_SESSION['user'] = [
-        //         "id" => 1,
-        //         "nivel" => 1,
-        //     ];
-        // }
+        if (IS_DEVELOPMENT) {
+            $_SESSION['user'] = [
+                "id" => 1,
+                "nivel" => 1,
+            ];
+        }
 
         if ($protected and !isset($_SESSION['user'])) {
             echo json_encode([
