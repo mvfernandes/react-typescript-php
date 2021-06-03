@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . "/Controller.php";
 class Home extends Controller
 {
     public function __construct($protected = false) {
